@@ -1,0 +1,76 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: lightgray;
+}
+
+h1, h2, h3, h4 {color: black; font-weight: bold; text-transform:uppercase;}
+
+div > p {
+	text-align: justify;
+	font-family: Verdana, 'Roboto', sans-serif;
+	font-size: 13px;
+}
+
+.content-cell {
+	background-color: #FFFCCC;
+	margin-bottom: 15px;
+	padding: 10px 18px;
+	border-radius: 18px;
+	box-shadow: 5px 10px #888888;
+	/* box-shadow: 0 0 80px #18580b; */
+
+}
+
+.content-cell h2 {
+	margin-top: -5px;
+}
+
+/* Not XS screen */
+@media (min-width:768px){
+	#collapsable-nav {
+		visibility: hidden;
+	}
+}
+
+/* XS screen */
+@media (max-width:767px){
+	
+	.navbar-brand {
+		margin-left: 15px;
+	}
+	
+	.content-cell {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	#collapsable-nav {
+		background-color: #BBEABB;
+	}
+	
+	#nav-list {		
+		margin-bottom: 1px;
+		margin-top: 0px;
+	}
+	
+	#nav-list li{
+		text-align: center;
+		border: 1px solid #559955;
+		margin-bottom:-1px;
+	}
+	#nav-list li:hover{
+		font-weight: bold;
+		background-color: #BBDDBB;
+	}
+
+	#chicken-tile, #beef-tile, #sushi-tile {
+    width: 100%;
+    padding: 20px;
+    background-color: #99ed7b;
+    margin-bottom: 60px;
+    box-shadow: 0 0 80px #18580b;
+}
+
+}
